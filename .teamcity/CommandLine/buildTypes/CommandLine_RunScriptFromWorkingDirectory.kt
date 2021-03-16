@@ -2,7 +2,6 @@ package CommandLine.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.exec
-import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object CommandLine_RunScriptFromWorkingDirectory : BuildType({
     uuid = "36e73e99-655c-4ca0-ab0a-0c62035ca18b"
@@ -16,11 +15,6 @@ object CommandLine_RunScriptFromWorkingDirectory : BuildType({
         exec {
             workingDir = "subdirectory"
             path = "hello_world.sh"
-        }
-    }
-
-    triggers {
-        vcs {
         }
     }
 })
