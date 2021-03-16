@@ -15,13 +15,15 @@ object Project : Project({
     name = "Command Line"
 
     vcsRoot(CommandLine_HttpsGithubComBurnashevaCommandLineRunnerGitRefsHeadsMaster)
+    vcsRoot(CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster)
 
     buildType(CommandLine_RunPythonHelloWorldInsideContainer)
-    buildType(CommandLine_SetPasswordParameterInServiceMessages)
+    buildType(CommandLine_RunScriptFromWorkingDirectory)
     buildType(CommandLine_SimpleHiFromTemplate)
     buildType(CommandLine_BuildProblem)
     buildType(CommandLine_ListHiddenDirectory)
     buildType(CommandLine_ListHiddenDirectoryWindows)
+    buildType(CommandLine_SetPasswordParameterInServiceMessages)
     buildType(CommandLine_GitCloneInCommandLine)
     buildType(CommandLine_AutodetectedBuildSteps)
     buildType(CommandLine_RunMvnFromCommandLine)
