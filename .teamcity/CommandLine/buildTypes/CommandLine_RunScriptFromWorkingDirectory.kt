@@ -14,7 +14,7 @@ object CommandLine_RunScriptFromWorkingDirectory : BuildType({
     steps {
         exec {
             workingDir = "subdirectory"
-            path = "hello_world.sh"
+            path = "subdirectory/hello_world.sh"
         }
     }
 })
