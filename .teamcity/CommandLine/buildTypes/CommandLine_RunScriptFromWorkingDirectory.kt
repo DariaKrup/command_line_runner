@@ -1,6 +1,7 @@
 package CommandLine.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.exec
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object CommandLine_RunScriptFromWorkingDirectory : BuildType({
@@ -9,6 +10,13 @@ object CommandLine_RunScriptFromWorkingDirectory : BuildType({
 
     vcs {
         root(CommandLine.vcsRoots.CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster)
+    }
+
+    steps {
+        exec {
+            workingDir = "subdirectory"
+            path = "hello_world.sh"
+        }
     }
 
     triggers {
