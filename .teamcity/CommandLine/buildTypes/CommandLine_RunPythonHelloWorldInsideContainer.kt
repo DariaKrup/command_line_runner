@@ -9,7 +9,7 @@ object CommandLine_RunPythonHelloWorldInsideContainer : BuildType({
     paused = true
 
     vcs {
-        root(AbsoluteId("EmptyProject_EmptySubproject_HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHea"))
+        root(AbsoluteId("HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHeadsMaster"))
 
         checkoutDir = "git_resources"
     }
