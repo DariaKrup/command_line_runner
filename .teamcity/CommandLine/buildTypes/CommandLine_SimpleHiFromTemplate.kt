@@ -4,7 +4,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object CommandLine_SimpleHiFromTemplate : BuildType({
-    templates(AbsoluteId("ManualTemplate_2"))
+    templates(AbsoluteId("ManualTemplate_3"))
     uuid = "0ca980e5-0c92-41c9-83c9-800d52aa7a28"
     name = "simple hi from template"
     paused = true
