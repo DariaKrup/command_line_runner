@@ -15,6 +15,7 @@ object Project : Project({
     name = "Command Line"
 
     vcsRoot(CommandLine_HttpsGithubComBurnashevaCommandLineRunnerGitRefsHeadsMaster)
+    vcsRoot(CommandLine_HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
     vcsRoot(CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster)
 
     buildType(CommandLine_RunPythonHelloWorldInsideContainer)
@@ -24,6 +25,7 @@ object Project : Project({
     buildType(CommandLine_ListHiddenDirectory)
     buildType(CommandLine_ListHiddenDirectoryWindows)
     buildType(CommandLine_SetPasswordParameterInServiceMessages)
+    buildType(CommandLine_TemporaryBuildConfiguration)
     buildType(CommandLine_GitCloneInCommandLine)
     buildType(CommandLine_AutodetectedBuildSteps)
     buildType(CommandLine_RunMvnFromCommandLine)
