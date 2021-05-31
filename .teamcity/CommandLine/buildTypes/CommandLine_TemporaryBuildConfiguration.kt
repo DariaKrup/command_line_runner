@@ -1,6 +1,7 @@
 package CommandLine.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.maven
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
 object CommandLine_TemporaryBuildConfiguration : BuildType({
@@ -9,6 +10,13 @@ object CommandLine_TemporaryBuildConfiguration : BuildType({
 
     vcs {
         root(CommandLine.vcsRoots.CommandLine_HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
+    }
+
+    steps {
+        maven {
+            goals = "clean test"
+            runnerArgs = "-Dmaven.test.failure.ignore=true"
+        }
     }
 
     triggers {
