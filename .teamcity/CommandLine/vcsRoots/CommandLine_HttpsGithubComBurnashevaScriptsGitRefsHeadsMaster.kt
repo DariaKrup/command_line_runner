@@ -9,4 +9,5 @@ object CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster : GitVcsRoo
     url = "https://github.com/burnasheva/scripts.git"
     branch = "refs/heads/master"
     branchSpec = "refs/heads/*"
+    param("useAlternates", "true")
 })

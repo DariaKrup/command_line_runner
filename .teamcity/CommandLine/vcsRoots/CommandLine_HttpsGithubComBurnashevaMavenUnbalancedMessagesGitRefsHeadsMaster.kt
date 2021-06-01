@@ -9,4 +9,5 @@ object CommandLine_HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMa
     url = "https://github.com/burnasheva/maven_unbalanced_messages.git"
     branch = "refs/heads/master"
     branchSpec = "refs/heads/*"
+    param("useAlternates", "true")
 })

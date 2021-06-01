@@ -12,4 +12,5 @@ object CommandLine_HttpsGithubComBurnashevaCommandLineRunnerGitRefsHeadsMaster :
         userName = "burnasheva"
         password = "credentialsJSON:f582ecb0-3de3-44c1-bf46-161576de70be"
     }
+    param("useAlternates", "true")
 })
