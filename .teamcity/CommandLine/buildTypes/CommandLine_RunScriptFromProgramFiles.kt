@@ -1,7 +1,7 @@
 package CommandLine.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.exec
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 
 object CommandLine_RunScriptFromProgramFiles : BuildType({
     uuid = "104cfbbe-eeae-48ce-8550-f987e492f01c"
@@ -16,9 +16,11 @@ object CommandLine_RunScriptFromProgramFiles : BuildType({
     }
 
     steps {
-        exec {
-            workingDir = "subdirectory"
-            path = "subdirectory/hello_world.sh"
+        script {
+            scriptContent = """%mercurialPath%\hg.exe help"""
+            param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
+            param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
+            param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
         }
     }
 })
