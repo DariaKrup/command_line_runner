@@ -19,7 +19,7 @@ object CommandLine_RunScriptFromProgramFiles : BuildType({
         script {
             scriptContent = """
                 dir 
-                %mercurialPath%\hg.exe help
+                "%mercurialPath%\hg.exe" help
             """.trimIndent()
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
