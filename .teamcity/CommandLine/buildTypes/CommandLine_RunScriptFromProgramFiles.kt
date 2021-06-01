@@ -7,6 +7,10 @@ object CommandLine_RunScriptFromProgramFiles : BuildType({
     uuid = "104cfbbe-eeae-48ce-8550-f987e492f01c"
     name = "run script from program files"
 
+    params {
+        param("mercurialPath", """C:\Program Files\Mercurial""")
+    }
+
     vcs {
         root(CommandLine.vcsRoots.CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster)
     }
