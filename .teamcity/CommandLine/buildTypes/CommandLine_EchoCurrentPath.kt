@@ -9,10 +9,7 @@ object CommandLine_EchoCurrentPath : BuildType({
 
     steps {
         script {
-            scriptContent = """
-                for /f %%%%i in ('cd') do set path=%%%%i
-                echo "current path: %%path%%"
-            """.trimIndent()
+            scriptContent = "cd"
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
             param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
