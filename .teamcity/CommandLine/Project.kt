@@ -32,6 +32,7 @@ object Project : Project({
     buildType(CommandLine_SimpleWindowsEcho)
     buildType(CommandLine_SimpleWindowsEchoCopy)
     buildType(CommandLine_Stderr)
+    buildType(CommandLine_RunScriptFromWorkingDirectoryCustomScript)
 
     template(CommandLine_SimpleTemplate)
 
