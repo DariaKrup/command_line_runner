@@ -18,6 +18,7 @@ object Project : Project({
     vcsRoot(CommandLine_HttpsGithubComBurnashevaMavenUnbalancedMessagesGitRefsHeadsMaster)
     vcsRoot(CommandLine_HttpsGithubComBurnashevaScriptsGitRefsHeadsMaster)
 
+    buildType(CommandLine_EchoCurrentPath)
     buildType(CommandLine_RunPythonHelloWorldInsideContainer)
     buildType(CommandLine_RunScriptFromWorkingDirectory)
     buildType(CommandLine_SimpleHiFromTemplate)
