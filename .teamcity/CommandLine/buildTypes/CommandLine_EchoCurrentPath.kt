@@ -11,7 +11,7 @@ object CommandLine_EchoCurrentPath : BuildType({
         script {
             scriptContent = """
                 echo 'current path:'
-                cd
+                pwd
             """.trimIndent()
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
