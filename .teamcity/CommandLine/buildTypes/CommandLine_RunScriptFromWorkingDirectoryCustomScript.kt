@@ -13,7 +13,10 @@ object CommandLine_RunScriptFromWorkingDirectoryCustomScript : BuildType({
 
     steps {
         script {
-            scriptContent = "subdirectory/hello_world.sh"
+            scriptContent = """
+                cd
+                subdirectory/hello_world.sh
+            """.trimIndent()
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
             param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
