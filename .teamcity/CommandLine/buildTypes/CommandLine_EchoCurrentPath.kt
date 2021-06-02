@@ -9,7 +9,7 @@ object CommandLine_EchoCurrentPath : BuildType({
 
     steps {
         script {
-            scriptContent = "cd"
+            scriptContent = "echo %%cd%%"
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
             param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
