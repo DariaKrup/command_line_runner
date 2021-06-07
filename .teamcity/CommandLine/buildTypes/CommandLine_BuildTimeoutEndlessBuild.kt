@@ -36,4 +36,8 @@ object CommandLine_BuildTimeoutEndlessBuild : BuildType({
             param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
         }
     }
+
+    failureConditions {
+        executionTimeoutMin = 1
+    }
 })
