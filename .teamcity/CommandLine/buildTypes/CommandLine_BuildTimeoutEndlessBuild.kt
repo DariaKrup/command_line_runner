@@ -16,6 +16,7 @@ object CommandLine_BuildTimeoutEndlessBuild : BuildType({
         }
         script {
             name = "New build step"
+            executionMode = BuildStep.ExecutionMode.ALWAYS
             scriptContent = "ping google.com"
             param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
             param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
