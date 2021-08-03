@@ -6,7 +6,6 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 object CommandLine_BuildProblem : BuildType({
     uuid = "743b9912-8e72-4790-b4fd-4cbdefc3f0d6"
     name = "build problem"
-    paused = true
 
     vcs {
         root(AbsoluteId("HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHeadsMaster_3"))
