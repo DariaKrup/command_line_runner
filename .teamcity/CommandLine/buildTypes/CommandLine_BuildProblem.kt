@@ -8,6 +8,10 @@ object CommandLine_BuildProblem : BuildType({
     name = "build problem"
     paused = true
 
+    vcs {
+        root(AbsoluteId("HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHeadsMaster_3"))
+    }
+
     steps {
         script {
             scriptContent = """echo "##teamcity[buildStatus status='FAILURE' text='xxxhad been pushed successfully']""""
