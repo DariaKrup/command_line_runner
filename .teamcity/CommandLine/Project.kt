@@ -27,6 +27,7 @@ object Project : Project({
     buildType(CommandLine_ListHiddenDirectory)
     buildType(CommandLine_ListHiddenDirectoryWindows)
     buildType(CommandLine_RunScriptFromProgramFiles)
+    buildType(CommandLine_LsContentOfTheHomeDirectory)
     buildType(CommandLine_SetPasswordParameterInServiceMessages)
     buildType(CommandLine_GitCloneInCommandLine)
     buildType(CommandLine_AutodetectedBuildSteps)
