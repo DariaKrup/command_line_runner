@@ -17,12 +17,13 @@ object CommandLine_RunPythonHelloWorldInsideContainer : BuildType({
     steps {
         script {
             scriptContent = """
-                #!/usr/bin/python
+                #!/usr/bin/python3
                 print("Hello, world")
             """.trimIndent()
             dockerRunParameters = "--rm"
-            param("teamcity.runAs.windowsIntegrityLlevel", "auto")
-            param("teamcity.runAs.loggingLevel", "off")
+            param("org.jfrog.artifactory.selectedDeployableServer.downloadSpecSource", "Job configuration")
+            param("org.jfrog.artifactory.selectedDeployableServer.useSpecs", "false")
+            param("org.jfrog.artifactory.selectedDeployableServer.uploadSpecSource", "Job configuration")
         }
     }
 
