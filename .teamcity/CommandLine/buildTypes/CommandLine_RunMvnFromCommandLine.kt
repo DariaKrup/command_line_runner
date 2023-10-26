@@ -9,7 +9,7 @@ object CommandLine_RunMvnFromCommandLine : BuildType({
     paused = true
 
     vcs {
-        root(AbsoluteId("HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHeadsMaster_3"))
+        root(AbsoluteId("HttpsGithubComBurnashevaMavenUnbalancedMessages"))
     }
 
     steps {

@@ -9,7 +9,7 @@ object CommandLine_BuildProblem : BuildType({
     name = "build problem"
 
     vcs {
-        root(AbsoluteId("HttpsGithubComBurnashevaMvn2springOpenjpaGitRefsHeadsMaster_3"))
+        root(AbsoluteId("HttpsGithubComBurnashevaMavenUnbalancedMessages"))
     }
 
     steps {
