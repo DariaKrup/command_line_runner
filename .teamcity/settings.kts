@@ -40,7 +40,6 @@ project {
 
 object Build : BuildType({
     name = "Build"
-    paused = true
 
     vcs {
         root(DslContext.settingsRoot)
