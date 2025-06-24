@@ -1,4 +1,6 @@
 jobs:
   Job1:
     name: Job 1
-    steps: []
+    steps:
+      - type: script
+        script-content: ./hello_world_python.sh
